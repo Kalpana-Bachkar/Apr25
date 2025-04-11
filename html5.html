@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphics</title>
+  </head>
+  <body>
+    <h3>Graphics</h3>
+    <svg>
+      <!-- 
+        -svg stands for Scalable Vector Grsphics
+        defines vector based graphics in xml format.
+        -it defines a container for graphical reprentation 
+        -->
+      <circle cx="80px" cy="80px" r="60px" />
+
+      <!--
+          cx=x coordinate(defult value is 0)
+          cy=y coordinate(default value is 0)
+          r=radius of circle-->
+    </svg>
+    <svg>
+      <ellipse cx="80px" cy="80px" rx="70px" ry="40px" />
+      <!-- 
+         cx=x coordinate value
+         cy=ycoordinate value
+         rx horizonlte radius
+         ry=vertical radius-->
+    </svg>
+    <svg>
+      <rect height="90px" width="60px" />
+    </svg>
+    <canvas width="200" height="100" style="border: 1px solid black"> </canvas>
+    <hr />
+    <audio controls autoplay loop muted>
+      <!--
+        -audio tag is used to play audio files/content/stream.
+        -it supports mp3 wav and ogg.
+        -attributes
+        -controls =provides control over audio
+        -autoplay=provides playing the audio as it is ready
+        -loop=after finishing the audio it repeates from begining
+        
+        
+        -->
+      <source src="" type="audio/mpeg" />
+    </audio>
+    <video controls loop autoplay muted>
+            <!--
+                - A Video Tag is used to play video contents or streams.
+                - Video Format it supports
+                    - MP4
+                    - WebM
+                    - OGG
+                - Attributes:   
+                    - controls  : Video Controls
+                    - Loop      : After finishing the video it repeats to the beginning point.
+                    - Autoplay  : Video start whenever its completely loaded.
+                    - Muted     : Muted Audio when the video is played.
+            -->
+            <source src="./Assets/vid/Dubai.mp4" type="video/mp4">  <!-- Video Source -->
+            <track kind="captions" srclang="eng" label="English-sub" default src="./Assets/vid/subtitle.vtt">
+
+            <!--
+                - Track tag which is used to define the track of the video file.
+                - Used for specifying the subtitles or caption for the video.
+                - Needs the server, to run the track.
+            -->
+
+        </video>
+
+        <hr>
+
+        <embed type="image/jpg" src="./Assets/img/coffee.png" width="300">
+        <embed type="text/html" src="./html_form.html" height="300">
+        <embed type="video/webm" src="./Assets/vid/Dubai.mp4" height="300">
+
+            <!--
+                - Embed tag defines a container for an external resouces.
+                - Any browser which does not supports java Applet, it can be replaced by embed tag.
+                - It gives a better usage in respective of different html tags.
+            -->
+
+    </body>
+</html>
+    </div>
+</body>
+</html> tag-->
+  </body>
+</html>
